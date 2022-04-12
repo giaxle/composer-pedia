@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/composer-pedia/static/css/main.6df22e4f.css",
+    "main.js": "/composer-pedia/static/js/main.54dc87d7.js",
+    "index.html": "/composer-pedia/index.html",
+    "static/media/back-icon.svg": "/composer-pedia/static/media/back-icon.ceecbfa5efdd8fe4e763afa75999f094.svg",
+    "main.6df22e4f.css.map": "/composer-pedia/static/css/main.6df22e4f.css.map",
+    "main.54dc87d7.js.map": "/composer-pedia/static/js/main.54dc87d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6df22e4f.css",
+    "static/js/main.54dc87d7.js"
+  ]
+}
