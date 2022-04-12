@@ -1,0 +1,42 @@
+.composerCard {
+  max-width: 19rem;
+  width: 100%;
+  background-color: #5d0b1b;
+  color: #f2eecb;
+  font-family: "Beau Rivage", cursive;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 10px solid goldenrod;
+  border-radius: 5px;
+}
+
+.composerCardInfo {
+  width: 100%;
+  text-align: center;
+  background-color: #f2eecb;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.composerCard img {
+  border-radius: 50%;
+  border: 3px solid #f2eecb;
+}
+
+.composerCard button {
+  font-family: "Beau Rivage", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: #b99566;
+  border-radius: 5px;
+}
