@@ -12,7 +12,7 @@ const fetchPopularComposers = async (): Promise<any> => {
   }
 };
 
-const fetchComposersByPeriod = async (period: string) => {
+const fetchComposersByPeriod = async (period: string): Promise<any> => {
   try {
     const { data } = await axios.get(
       `https://api.openopus.org/composer/list/epoch/${period}.json`
@@ -23,7 +23,7 @@ const fetchComposersByPeriod = async (period: string) => {
   }
 };
 
-const fetchComposerWorks = async (id: number) => {
+const fetchComposerWorks = async (id: number): Promise<any> => {
   try {
     const { data } = await axios.get(
       `https://api.openopus.org/work/list/composer/${id}/genre/Popular.json`
@@ -34,7 +34,7 @@ const fetchComposerWorks = async (id: number) => {
   }
 };
 
-const searchComposers = async (search: string) => {
+const searchComposers = async (search: string): Promise<any> => {
   try {
     const { data } = await axios.get(
       `https://api.openopus.org/composer/list/search/${search}.json`
@@ -45,9 +45,17 @@ const searchComposers = async (search: string) => {
   }
 };
 
-// const youtubeSearch = () => {
-//   try { }
-// }
+// const youtubeSearch = async (search: string): Promise<any> => {
+//   try {
+//     const { data } = await axios.get(
+//       `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${search}&key=${process.env.REACT_APP_YOUTUBE_KEY}`
+//     );
+
+//     return data;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
 export default {
   fetchPopularComposers,

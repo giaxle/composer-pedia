@@ -39,11 +39,16 @@
 .composerPageWorks {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  /* font-weight: 400; */
+  gap: 1.5rem;
   font-size: 1.5rem;
 }
 
 .composerPageWork {
-  border-bottom: 2px solid #f2eecb;
+  a {
+    color: #f2eecb;
+  }
+
+  a:visited {
+    color: #b99566;
+  }
 }

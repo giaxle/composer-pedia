@@ -2,6 +2,7 @@ import React, { useState, useEffect, Dispatch, SetStateAction } from "react";
 import style from "./composerpage.module.scss";
 import API from "../API/fetchData";
 import backIcon from "../../assets/icons/back-icon.svg";
+import { stringify } from "querystring";
 
 interface Composer {
   birth: string;
@@ -28,12 +29,18 @@ const ComposerPage: React.FC<Props> = ({
   setSelectedComposer,
 }) => {
   const [works, setWorks] = useState<any>();
+  const [link, setLink] = useState<string>("");
 
   const date = (date: string) => {
     if (date === null) {
       return "Present";
     }
-    return date.split("-").reverse().join("/");
+    return date.split("-")[0];
+  };
+
+  const getSearchQuery = (search: string) => {
+    const query = search.split(" ").join("+");
+    return query;
   };
 
   useEffect(() => {
@@ -68,7 +75,14 @@ const ComposerPage: React.FC<Props> = ({
           {works.map((work: Work) => {
             return (
               <div className={style.composerPageWork} key={work.id}>
-                {work.title}
+                <a
+                  href={`https://www.youtube.com/results?search_query=${getSearchQuery(
+                    work.title
+                  )}`}
+                  target="_blank"
+                >
+                  {work.title}
+                </a>
               </div>
             );
           })}
