@@ -1,5 +1,7 @@
 # Composer Encyclopedia
 
+https://giaxle.github.io/composer-pedia/
+
 A React SPA that fetches data from the Open Opus API and displays it client side for users to access.
 
 ## Project Purposes
